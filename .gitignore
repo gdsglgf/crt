@@ -2,3 +2,14 @@ target/
 .settings/
 .classpath
 .project
+
+# Mac OS
+.DS_Store
+
+# python
+.pyc
+
+tmp/
+tmp
+
+model/
