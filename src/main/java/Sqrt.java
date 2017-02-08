@@ -11,7 +11,7 @@ public class Sqrt {
 	public static double sqrt(double v, double epsilon) {
 		assert (v > 0 && epsilon > 0) : "params must be greater than zero.";
 		double mid = 0;
-		double left = 0, right = v, diff;
+		double left = 0, right = Math.max(1, v), diff;
 		while(true) {
 			mid = (left + right) / 2;
 //			System.out.println(String.format("[%f, %f, %f]", left, mid, right));
@@ -34,5 +34,6 @@ public class Sqrt {
 		System.out.println(sqrt(9, 1.0e-16));
 		System.out.println(sqrt(10, 0.00001));
 //		System.out.println(sqrt(-4, 0.00001));
+		System.out.println(sqrt(0.25, 0.00001));
 	}
 }
